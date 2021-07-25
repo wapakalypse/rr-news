@@ -19,7 +19,7 @@ app.set('view engine', 'ntl'); // register the template engine
 
 app.use(express.static(__dirname + '/public'));
 
-const url = 'https://www.autostat.ru/tags/3054/'
+app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function (req, res) {
 
@@ -75,9 +75,6 @@ app.get('/', function (req, res) {
 
     getData();
 
+}).listen(app.get('port'), function() {
+    console.log('App is running, server is listening on port ', app.get('port'));
 });
-
-
-app.listen(3000, () => {
-  console.log(`Example app listening at http://localhost:3000`)
-})
