@@ -4,7 +4,6 @@ const app = express();
 const fs = require('fs'); // this engine requires the fs module
 const cheerio = require('cheerio');
 const axios = require('axios');
-var RSS = require('rss');
 
 app.engine('ntl', function (filePath, options, callback) { // define the template engine
   fs.readFile(filePath, function (err, content) {
