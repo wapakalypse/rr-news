@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	    <meta property="og:image" content="/img/fon.jpg" />
+        <title>Новости о праворульных автомобилях</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Новости о праворульных автомобилях в России и странах СНГ">    	
+        <meta name="yandex" content="noyaca" />
+        <meta name="google-site-verification" content="G0DZlJqF_6Xx6zn_g4DVsSXvLodIHvP0jp38J63Z7VE" />
+        <meta name="yandex-verification" content="6cfe66fa7c3f6695" />
+        <meta property="og:title" content="За свободный ввоз праворульных автомобилей в Казахстан!">
+        <meta property="og:site_name" content="RightRule.su">
+        <meta property="og:url" content="https://rightrule.su/">
+        <meta property="og:description" content="Петиция за легализацию и свободный ввоз праворульных машин в Казахстан и ЕАЭС">
+        <meta property="og:image" content="https://rightrule.su/img/share.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="За свободный ввоз праворульных автомобилей в Казахстан!">
+        <meta name="twitter:description" content="Петиция за легализацию и свободный ввоз праворульных машин в Казахстан и ЕАЭС">
+        <meta name="twitter:image" content="https://rightrule.su/img/share.jpg">
+        <link rel="canonical" href="https://rightrule.su/" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="icon" href="https://rightrule.su/rule-fav.png" sizes="32x32">    
+		<link rel="stylesheet" href="https://use.fontawesome.com/1f3f980e35.css" media="all">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    </head>
+  
+    <body>
+
+        <div class="content" style="">
+
+        	<h1>Новости о праворульных автомобилях в России и странах СНГ</h1>
+
+			#posts#
+
+		</div>
+   
+    </body>   
+
+    <script>
+
+        let buttonsMore = document.querySelectorAll(".content-news-more");
+
+        [].forEach.call( buttonsMore, function(el) {
+            el.onclick = function(e) {
+                let number = Number(el.id);
+                let newsNumber = document.querySelector('#news' + number);
+                let newsElementsP = newsNumber.getElementsByTagName('p');
+
+                let elementP = null;
+
+                for (let i = 0; i < newsElementsP.length; ++i) {
+                    elementP = newsElementsP[i];
+                    elementP.classList.add('show-p');
+                }
+
+            el.classList.add('fade');
+            }
+        });
+
+    </script>
+</html>
+
+
+
+
+

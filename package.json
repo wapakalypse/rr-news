@@ -1,0 +1,27 @@
+{
+  "name": "ws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "livereload": "livereload"
+  },
+  "keywords": [],
+  "live": "nodemon server.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "browser-sync": "^2.26.14",
+    "cheerio": "^1.0.0-rc.9",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "rss": "^1.2.2",
+    "rss-generator": "0.0.3",
+    "uninstall": "0.0.0"
+  }
+}
