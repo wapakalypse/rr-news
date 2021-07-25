@@ -79,22 +79,6 @@ app.get('/', function (req, res) {
 });
 
 
-app.get('/rss', function (req, res) {
-     
-    var feed = new RSS({
-    title: '111',
-    description: '222',
-    feed_url: 'http://example.com/rss.xml',
-    site_url: 'http://example.com',
-    image_url: 'http://example.com/icon.png',
-});
-
-var xml = feed.xml();
-    res.send(xml);
-
-});
-
-
 app.listen(3000, () => {
   console.log(`Example app listening at http://localhost:3000`)
 })
